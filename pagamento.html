@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout - Loja de Moda</title>
+  <link rel="stylesheet" href="estilocsspagamento.css">
+  <script src="https://js.stripe.com/v3/"></script>
+</head>
+<body>
+  <header>
+    <!-- código do menu de navegação -->
+  </header>
+
+  <main>
+    <h1>Checkout</h1>
+    <form id="payment-form">
+      <div class="form-row">
+        <label for="card-element">
+          Informações do cartão de crédito
+        </label>
+        <div id="card-element">
+          <!-- Elemento do cartão de crédito do Stripe -->
+        </div>
+        <div id="card-errors" role="alert"></div>
+      </div>
+      <button type="submit">Finalizar compra</button>
+    </form>
+  </main>
+  <div class="payment-page">
+    <h1>Formas de pagamento</h1>
+    <p>Aqui estão as opções de pagamento disponíveis:</p>
+    <div class="payment-options">
+      <div class="payment-option">
+        <img src="https://www.paypalobjects.com/webstatic/mktg/logo/pp_cc_mark_111x69.jpg" alt="PayPal">
+        <p>PayPal</p>
+      </div>
+      <div class="payment-option">
+        <img src="https://www.mastercard.com.br/content/dam/mccom/pt-br/logo/mc_logo_64_40.png" alt="Mastercard">
+        <p>Mastercard</p>
+      </div>
+      <div class="payment-option">
+        <img src="https://www.visa.com.br/dam/VCOM/regional/br/Images/icon-visa-64x40.png" alt="Visa">
+        <p>Visa</p>
+      </div>
+    </div>
+  </div>
+  <footer>
+    <p>&copy; 2023 Loja de Moda</p>
+  </footer>
+
+  <script>
+    // Configuração do Stripe
+    var stripe = Stripe('sua_chave_publica_do_stripe');
+    var elements = stripe.elements();
+    var cardElement = elements.create('card');
+    cardElement.mount('#card-element');
+
+    // Validação do formulário de pagamento
+    var form = document.getElementById('payment-form');
+    form.addEventListener('submit', function(event) {
+      event.preventDefault();
+      stripe.createToken(cardElement).then(function(result) {
+        if (result.error) {
+          var errorElement = document.getElementById('card-errors');
+          errorElement.textContent = result.error.message;
+        } else {
+          // Enviar token para o servidor para processar pagamento
+          var token = result.token.id;
+          // redirecionar para a página de confirmação de pagamento
+          window.location.href = "confirmacao.html";
+        }
+      });
+    });
+  </script>
+<script>
+  // Array para armazenar os itens do carrinho
+var carrinho = [];
+
+// Função para adicionar um item ao carrinho
+function addToCart(nome, preco) {
+  var item = {
+    nome: nome,
+    preco: preco
+  };
+  carrinho.push(item);
+  alert("Item adicionado ao carrinho: " + nome);
+  console.log(carrinho);
+}
+</script>
+<center><h1>Incompleto "Apenas Modelo !!"</h1></center>
+</body>
+<script>
+  alert ("Essa função ainda não está pronta");
+</script>
+</html>

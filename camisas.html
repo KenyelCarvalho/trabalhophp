@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <title>Loja de Moda</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">   
+  <link rel="stylesheet" href="pagamento.html">
+  <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html" type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-house" viewBox="0 0 16 16">
+          <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293L8.707 1.5ZM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5 5 5Z"/>
+        </svg>Inicio</a></li>
+        <li><a href="camisas.html" type="button" class="btn btn-outline-secondary">Blusas</a></li>
+        <li><a href="tenis.html" type="button" class="btn btn-outline-secondary">Tênis</a></li>
+      </ul>
+      <form>
+        <input type="text" placeholder="Buscar produtos...">
+        <button type="button" class="btn btn-outline-secondary"> <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+          <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+        </svg>Buscar</button>
+      </form>
+    <ul>
+        <li><a href="Login.html" type="button" class="btn btn-outline-secondary">Entrar</a></li>
+        <li><a href="cadastro.html" type="button" class="btn btn-outline-secondary">Cadastrar</a></li>
+        <li><a href="pagamento.html" type="button" class="btn btn-outline-secondary"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-cart-check" viewBox="0 0 16 16">
+          <path d="M11.354 6.354a.5.5 0 0 0-.708-.708L8 8.293 6.854 7.146a.5.5 0 1 0-.708.708l1.5 1.5a.5.5 0 0 0 .708 0l3-3z"/>
+          <path d="M.5 1a.5.5 0 0 0 0 1h1.11l.401 1.607 1.498 7.985A.5.5 0 0 0 4 12h1a2 2 0 1 0 0 4 2 2 0 0 0 0-4h7a2 2 0 1 0 0 4 2 2 0 0 0 0-4h1a.5.5 0 0 0 .491-.408l1.5-8A.5.5 0 0 0 14.5 3H2.89l-.405-1.621A.5.5 0 0 0 2 1H.5zm3.915 10L3.102 4h10.796l-1.313 7h-8.17zM6 14a1 1 0 1 1-2 0 1 1 0 0 1 2 0zm7 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0z"/>
+        </svg>Carrinho</a></li>
+        <LI><a href="logout.php" class="btn btn-outline-secondary">Logout <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+          <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+        </svg></a>
+    </ul>
+    </nav>
+  </header>
+  <br>
+  <main>
+    <table>
+        <tr>
+              <td style="max-width: 250px;">
+      
+                <div class="product-list">
+                  <div class="product">
+                    <img src="https://www.katy.com.br/cdn/imagens/produtos/original/camisa-juvenil-nike-psg-stadium-home-20192020-266c4e108f15e1095b316fa81de17f6f.png"  alt="Produto 1">
+                    <h3>Camisa PSG</h3>
+                    <p>R$ 150,00</p>
+                    <button class="buy-button">Comprar</button>
+                  </div>
+
+                  <br>
+                  <div class="product">
+                    <img src="https://flamengo.vteximg.com.br/arquivos/ids/164071-1000-1000/H18340_1-removebg-preview.png?v=637807439979400000"  alt="Produto 4">
+                    <h3>Camisa Flamengo</h3>
+                    <p>R$ 120,00</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <br>
+              
+                  <div class="product">
+                    <img src="https://s2.glbimg.com/cz-dmnP4VwOuXy65CF_I_qHIezM=/0x0:640x640/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/A/r/Cx9ixRTa2lixhFD1mMng/titular-barcelona.png"  alt="Produto 1">
+                    <h3>Camisa Barcelona</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://cf.shopee.com.br/file/1a8057413c4272f2408705cf3e5479eb" alt="Produto 4">
+                    <h3>Camisa Arsenal</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+
+              </td>
+              <td style="max-width: 250px;"> 
+                  <div class="product">
+                    <img src="https://i.pinimg.com/564x/e4/79/35/e4793556077995c49458ac81c7557709.jpg"  alt="Produto 1">
+                    <h3>Camisa Juventus</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://static.netshoes.com.br/produtos/camisa-palmeiras-i-home-2022-2023/60/2I3-4647-060/2I3-4647-060_detalhe1.jpg?ts=1647939806" alt="Produto 4">
+                    <h3>Camisa Palmeiras</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+                <br>
+
+                  <div class="product">
+                    <img src="https://s2.glbimg.com/KXrfiiNMVaiOpzRGM3UBcjzeXic=/0x0:480x480/600x0/smart/filters:gifv():strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/b/V/FqRA6TTWGjLMLRCJblzQ/titular-atleticodemadrid.jpg" alt="Produto 1">
+                    <h3>Camisa Madrid</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+                  
+                  <div class="product">
+                    <img src="https://cf.shopee.com.br/file/ee971028071c42dd734d43b5d5e4eeb6"  alt="Produto 4">
+                    <h3>Camisa City</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+
+              </td>
+              <td style="max-width: 232px;">
+               
+                  <div class="product">
+                    <img src="https://images.mantosdofutebol.com.br/wp-content/uploads/2021/08/Terceira-camisa-do-Manchester-United-2021-2022-Adidas-kit-1.jpg"  alt="Produto 1">
+                    <h3>Camisa United</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://static.polissport.com.br/public/polissport/imagens/produtos/camisa-fluminense-braziline-choice-639cd7eed8e32.png"  alt="Produto 4">
+                    <h3>Camisa Fluminense</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+
+                <br>
+                  <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1151682/180_camisa_arsenal_preta_2023_158423729_1_97136f31a02208cfd13ce6aae7cf6f40.jpg" alt="Produto 1">
+                    <h3>Camisa Real Madrid</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://1.bp.blogspot.com/-xC3eVNhsLb0/Vxem-4SPcDI/AAAAAAAAr1w/g6Tof6AjUMsmCq6vGisQuaonDXXW6i6cwCLcB/s1600/CgZQcTSUEAAJ1gH.jpeg" style="max-width: 130px;" alt="Produto 4">
+                    <h3>Camisa Borússia</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+              </td>
+              <td style="max-width: 254px;">
+                
+                  <div class="product">
+                    <img src="http://cdn.shopify.com/s/files/1/0602/8132/3746/products/RealMadrid-Home-1.png?v=1634254783"  alt="Produto 1">
+                    <h3>Camisa Real Madrid</h3>
+                    <p>R$ 150,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+        
+                  <div class="product">
+                    <img src="https://img.elo7.com.br/product/main/423A830/camisa-adulto-sao-paulo-2022-2023-personalizada-c-nome-23.jpg"  alt="Produto 1">
+                    <h3>Camisa São Paulo</h3>
+                    <p>R$ 50,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/1151682/180_camisa_manchester_city_preta_2023_158423749_1_7e019bd2b44aa6c2a8dd54de4d5e60ba.jpg"  alt="Produto 4">
+                    <h3>Camisa Sport</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+
+                <br>
+             
+
+                  <div class="product">
+                    <img src="https://sporting.vtexassets.com/arquivos/ids/214674-800-800?v=637427687760900000&width=800&height=800&aspect=true"  alt="Produto 4">
+                    <h3>Camisa Sport</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+
+              </td>
+              <td style="max-width: 250px;">
+             
+                  <div class="product">
+                    <img src="https://d26lpennugtm8s.cloudfront.net/stores/878/529/products/chelsea-home-2020-51-682f061061ccff5af315952463447127-1024-1024.jpg" alt="Produto 1">
+                    <h3>Camisa chealse</h3>
+                    <p>R$ 50,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+                  
+                  <div class="product">
+                    <img src="https://images.tcdn.com.br/img/img_prod/638286/camisa_selecao_argentina_campea_copa_do_mundo_3_estrelas_aeroready_7775_1_f5428c94ec34dcfc308dbe1c210ad593.jpg"  alt="Produto 4">
+                    <h3>Camisa Argentina</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+                <br>
+
+                  <div class="product">
+                    <img src="https://kronnuz.com.br/wp-content/uploads/2021/09/ARS-F-400x400.webp" alt="Produto 1">
+                    <h3>Camisa Arsenal</h3>
+                    <p>R$ 50,00</p>
+                    <button>Comprar</button>
+                  </div>
+                  <br>
+
+                  <div class="product">
+                    <img src="https://kronnuz.com.br/wp-content/uploads/2021/09/ARS-F-400x400.webp" alt="Produto 4">
+                    <h3>Camisa Aresenal</h3>
+                    <p>R$ 120,00</p>
+                    <button>Comprar</button>
+                  </div>
+                </div>
+              </td>
+              <td>
+            </td>
+        </tr>
+    </table>
+  </main>
+  <br>
+  <footer>
+    <p>&copy; 2023 Loja de Moda</p>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
